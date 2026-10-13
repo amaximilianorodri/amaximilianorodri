@@ -2,7 +2,7 @@
 
 ## Alcance
 
-Rama local `codex/project-categories`, basada en el refinamiento `e8018ad`. Se conserva el diseño existente y se modifica la presentación de proyectos y actividad. No se hace push ni se modifican repositorios del equipo.
+Rama local `codex/project-categories`, basada en el refinamiento `e8018ad`. Se conserva el diseño existente y se modifica la presentación de proyectos y actividad. La preparación se realizó sin push y sin modificar repositorios del equipo. La autora autorizó posteriormente publicar los cambios el 13 de octubre de 2026.
 
 ## Organización
 

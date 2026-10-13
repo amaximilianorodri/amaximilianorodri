@@ -43,6 +43,6 @@ La cuenta de autor del commit publicado del perfil está correctamente vinculada
 
 Se actualizaron datos públicos reales sin modificar los conteos oficiales ni sumar commits no atribuidos. La integración de ASHAKids, la asociación del correo histórico de JMP y la revisión de enlaces Figma requieren intervención de sus responsables; no se simulan como resueltas.
 
-Queda pendiente autorización para publicar esta revisión. El perfil público continúa en su versión anterior y conserva todos los proyectos.
+Al terminar esta revisión, la publicación quedó pendiente de autorización. La autora autorizó posteriormente publicar el refinamiento junto con la reorganización de proyectos el 13 de octubre de 2026.
 
 [Volver al perfil](../README.md)

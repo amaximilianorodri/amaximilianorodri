@@ -42,6 +42,6 @@ La primera versión publicada está en el commit `e79f601`. Esta revisión se pr
 
 [Volver al perfil](../README.md)
 
-La segunda pasada visual se prepara en `codex/refine-cyberpunk-profile`, partiendo de la versión publicada `9faae28`. El informe de [refinamiento](REFINAMIENTO_VISUAL.md) recoge comprobaciones y límites. Esta revisión requiere autorización expresa antes de hacer push.
+La segunda pasada visual se prepara en `codex/refine-cyberpunk-profile`, partiendo de la versión publicada `9faae28`. El informe de [refinamiento](REFINAMIENTO_VISUAL.md) recoge comprobaciones y límites. La publicación de esta revisión fue autorizada por la autora el 13 de octubre de 2026.
 
-La reorganización de proyectos se prepara sobre ese refinamiento en `codex/project-categories`. Consulta [su informe](PROYECTOS_REORGANIZADOS.md). Sigue pendiente autorización para publicar estas revisiones locales.
+La reorganización de proyectos se prepara sobre ese refinamiento en `codex/project-categories`. Consulta [su informe](PROYECTOS_REORGANIZADOS.md). La autora autorizó publicar ambas revisiones el 13 de octubre de 2026.
