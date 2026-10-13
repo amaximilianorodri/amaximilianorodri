@@ -23,17 +23,41 @@ Me gusta entender una necesidad, darle forma a una idea y colaborar para constru
 
 ## Mission select
 
-**Ideas con propósito, software en equipo y prototipos.** En cada proyecto distingo mi aporte y su estado; los casos de estudio reúnen el contexto y la evidencia.
+**Experiencia actual → evolución de una idea → proyectos por categoría.** Cada proyecto distingue mi aporte, su estado y la evidencia disponible.
 
-### 01 · ASHAKids
+### 01 · JMP PINGUS · Prácticas y desarrollo de inventario
+
+<a href="docs/jmp.md"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/cyberpunk/mission-jmp.png"><img src="assets/cyberpunk/mission-jmp.gif" width="480" alt="JMP PINGUS: prácticas, frontend, datos y desarrollo colaborativo. Tarjeta editorial animada brevemente."></picture></a>
+
+**Mi experiencia actual como practicante:** participo en el desarrollo del sistema de inventario JMP PINGUS y en sus iteraciones de mejora.
+
+El sistema organiza materiales y operaciones mediante solicitudes, devoluciones, PDF y perfiles. **Mi aporte:** cambios en frontend, backend, servicios y lógica de datos. **Estado:** implementación colaborativa con pruebas en el repositorio; el caso público omite información empresarial.
+
+**Tecnologías del proyecto:** React, TypeScript, Tailwind CSS, Supabase, PostgreSQL y pdf-lib.
+
+[Repositorio](https://github.com/luisteransaucedo18-coder/JMP-PINGUS-INVENTARIO) · [Mi participación](docs/jmp.md) · [Solicitudes, PDF y devoluciones](https://github.com/luisteransaucedo18-coder/JMP-PINGUS-INVENTARIO/commit/b316269)
+
+### 02 · EduKids → ASHAKids · Una idea que creció
 
 <a href="docs/ashakids.md"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/cyberpunk/mission-ashakids.png"><img src="assets/cyberpunk/mission-ashakids.gif" width="480" alt="ASHAKids: idea propia y desarrollo en equipo. Tarjeta editorial animada brevemente."></picture></a>
 
-Actividades lúdicas y una propuesta de conexión entre familias y profesionales para acompañar la comunicación y el aprendizaje infantil. **Mi aporte:** idea original desde EduKids y trabajo principalmente en la landing. **Estado:** desarrollo colaborativo en `dev`; la eficacia educativa no está validada.
+Durante la pandemia acompañé a mis hermanitos en sus dificultades de lenguaje y comunicación con actividades hechas a mano. Esa experiencia dio origen a **EduKids** y creció hacia **ASHAKids**, una propuesta más completa construida en equipo.
+
+**EduKids — el inicio:** impulsé y desarrollé un prototipo web de actividades infantiles con HTML, CSS y JavaScript; conserva secciones incompletas.
+
+**ASHAKids — la evolución:** actividades lúdicas, seguimiento orientativo y conexión entre familias y profesionales. **Mi aporte:** idea original y trabajo principalmente en la landing. **Estado:** desarrollo colaborativo en `dev`, con React y TypeScript en la interfaz y FastAPI y PostgreSQL en el backend del equipo; eficacia educativa pendiente de validación.
+
+Este recorrido describe la evolución de la idea, sin atribuir una migración directa de código entre ambos proyectos.
+
+[EduKids: repositorio](https://github.com/amaximilianorodri/EduKids) · [Demo inicial](https://amaximilianorodri.github.io/EduKids/) · [Caso de EduKids](docs/edukids.md)
 
 [Repositorio y desarrollo](https://github.com/sromansilva/ashakids-platform/tree/dev) · [Historia y contribución](docs/ashakids.md) · [Mi cambio de landing](https://github.com/sromansilva/ashakids-platform/commit/5dacd55)
 
-### 02 · LifeXperience
+### Innovación e impacto social
+
+<picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/cyberpunk/category-impact.png"><img src="assets/cyberpunk/category-impact.gif" width="600" alt="Innovación e impacto social: LifeXperience y MANKA+. Panel neón con movimiento breve y alternativa estática."></picture>
+
+#### LifeXperience
 
 <a href="docs/lifexperience.md"><img src="assets/proyectos/lifexperience.png" width="420" alt="Captura real de LifeXperience: bienvenida, avatar y opciones de acceso. Abrir el caso para ver la imagen completa."></a>
 
@@ -41,7 +65,7 @@ Actividades lúdicas y una propuesta de conexión entre familias y profesionales
 
 [Figma Make](https://www.figma.com/make/PEM0hl8lFPZMcPFT7gFbYG/Next-steps-discussion) · [Caso y captura completa](docs/lifexperience.md)
 
-### 03 · MANKA+
+#### MANKA+
 
 <a href="docs/manka.md"><img src="assets/proyectos/manka.png" width="110" alt="Captura real de MANKA+: portada móvil del modo administrador. Abrir el caso para verla completa."></a>
 
@@ -49,7 +73,11 @@ Abastecimiento de productos, registro de familias y seguimiento de beneficiarios
 
 [Prototipo en Figma](https://www.figma.com/proto/E2MQIJzdnrB3AHdduSVq4r/Manka-3.0?node-id=22-2&starting-point-node-id=22%3A2) · [Caso y captura completa](docs/manka.md)
 
-### 04 · LOOKMI
+### Diseño y prototipado
+
+<picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/cyberpunk/category-design.png"><img src="assets/cyberpunk/category-design.gif" width="600" alt="Diseño y prototipado: LOOKMI y MirrorMind. Panel neón con movimiento breve y alternativa estática."></picture>
+
+#### LOOKMI
 
 <a href="docs/lookmi.md"><img src="assets/proyectos/lookmi.png" width="420" alt="Captura real de LOOKMI Avatar Studio: mascota, accesorios y controles de edición. Abrir el caso para verla completa."></a>
 
@@ -57,33 +85,33 @@ Una foto de tu mascota como punto de partida para un avatar editable y la explor
 
 [Figma Make](https://www.figma.com/make/QWhvi0W8B2Do0OfQGDDvJZ/Idea-Development-Support) · [Caso y captura completa](docs/lookmi.md)
 
-### 05 · JMP · Inventario y operaciones
+#### MirrorMind
 
-<a href="docs/jmp.md"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/cyberpunk/mission-jmp.png"><img src="assets/cyberpunk/mission-jmp.gif" width="480" alt="JMP: frontend, datos y desarrollo colaborativo. Tarjeta editorial animada brevemente."></picture></a>
+Prototipo de interfaces y exploración del análisis emocional con **React y TypeScript**. **Estado:** varias vistas son simulaciones; revisión técnica y de seguridad pendiente antes de promoverlo como aplicación operativa. No se atribuye validez clínica ni funcionalidades de producción.
 
-Sistema de materiales y operaciones con solicitudes, devoluciones, PDF y perfiles. **Mi aporte:** cambios en frontend, backend, servicios y lógica de datos. **Estado:** implementación colaborativa con pruebas en el repositorio; el caso público omite información empresarial.
-
-[Repositorio](https://github.com/luisteransaucedo18-coder/JMP-PINGUS-INVENTARIO) · [Mi participación](docs/jmp.md) · [Solicitudes, PDF y devoluciones](https://github.com/luisteransaucedo18-coder/JMP-PINGUS-INVENTARIO/commit/b316269)
+[Repositorio de MirrorMind](https://github.com/amaximilianorodri/MirrorMind)
 
 ## Team mode · Arcade zone
 
-### GAMELAB 4.0 · Grupo 7, equipo 2
+**Desarrollo colaborativo y videojuegos.** Proyectos de equipo con contribuciones y créditos diferenciados.
 
-<a href="docs/gamelab.md"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/cyberpunk/mission-gamelab.png"><img src="assets/cyberpunk/mission-gamelab.gif" width="480" alt="GAMELAB 4.0: diseño de la propuesta del equipo sobre Threadbare. Tarjeta editorial animada brevemente."></picture></a>
+<picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/cyberpunk/category-team.png"><img src="assets/cyberpunk/category-team.gif" width="600" alt="Desarrollo colaborativo y videojuegos: NeuroEcho en GAMELAB y otras experiencias. Panel arcade con alternativa estática."></picture>
 
-**Mi participación:** distintas tareas y diseño de la propuesta de juego del equipo. **Contexto:** proyecto Godot sobre Threadbare; el repositorio es un fork de Endless y conserva sus créditos. La participación de diseño está confirmada por mí; queda pendiente enlazar una entrega específica del equipo.
+### NeuroEcho · GAMELAB 4.0 · Grupo 7, equipo 2
+
+<a href="docs/gamelab.md"><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/cyberpunk/mission-gamelab.png"><img src="assets/cyberpunk/mission-gamelab.gif" width="480" alt="NeuroEcho en GAMELAB 4.0: diseño de la propuesta del equipo sobre Threadbare. Tarjeta editorial animada brevemente."></picture></a>
+
+**NeuroEcho es el juego creado con mi equipo de GAMELAB 4.0. Mi participación:** distintas tareas y diseño de la propuesta del juego. **Contexto:** proyecto Godot sobre Threadbare; el repositorio es un fork de Endless y conserva sus créditos. La participación de diseño está confirmada por mí; queda pendiente enlazar una entrega específica del equipo.
 
 [Organización](https://github.com/Game-Lab-4-0-UTP-Group-7-Team-2) · [Repositorio del equipo](https://github.com/Game-Lab-4-0-UTP-Group-7-Team-2/threadbare) · [Contexto y contribución](docs/gamelab.md)
 
 <details>
-<summary><strong>Quest log · De EduKids a ASHAKids y otras colaboraciones</strong></summary>
+<summary><strong>Otras experiencias de desarrollo colaborativo</strong></summary>
 
-**Experiencia familiar → actividades hechas a mano → EduKids → ASHAKids.** Durante la pandemia acompañé a mis hermanitos en sus dificultades de lenguaje y comunicación. Esa experiencia motivó la primera exploración digital y luego una propuesta más amplia en equipo. [Leer la historia](docs/ashakids.md).
+- **UTPLiteApp:** prototipo académico Android con Kotlin, Java y XML; mis cambios identificados incluyen calendario, anuncios y login. Utiliza datos estáticos y acceso de demostración. [Repositorio](https://github.com/sromansilva/UTPLiteApp) · [Mis contribuciones](docs/utpliteapp.md).
+- **ProyectoHeDe:** sitio institucional estático con HTML, CSS y JavaScript; aporte personal detallado pendiente de precisar. [Repositorio colaborativo](https://github.com/j3zkills/ProyectoHeDe).
 
-- **EduKids:** primera etapa web con HTML, CSS y JavaScript, impulsada y desarrollada por mí; prototipo con secciones incompletas. [Repositorio](https://github.com/amaximilianorodri/EduKids) · [Demo](https://amaximilianorodri.github.io/EduKids/) · [Caso](docs/edukids.md).
-- **UTPLiteApp:** prototipo académico Android; mis cambios identificados incluyen calendario, anuncios y login. Utiliza datos estáticos y acceso de demostración. [Repositorio](https://github.com/sromansilva/UTPLiteApp) · [Mis contribuciones](docs/utpliteapp.md).
-- **MirrorMind:** prototipo de interfaces y exploración del análisis emocional, con simulaciones y revisión técnica y de seguridad pendiente. [Repositorio](https://github.com/amaximilianorodri/MirrorMind).
-- **ProyectoHeDe:** sitio institucional estático; aporte personal detallado pendiente de precisar. [Repositorio colaborativo](https://github.com/j3zkills/ProyectoHeDe).
+También colaboro en ASHAKids y JMP PINGUS; sus casos distinguen mis cambios de las funcionalidades construidas por el equipo.
 
 </details>
 
@@ -91,11 +119,9 @@ Sistema de materiales y operaciones con solicitudes, devoluciones, PDF y perfile
 
 ## Contribution map
 
-**El calendario no cuenta toda la historia.** Los aportes en ramas de desarrollo, commits sin atribución y prototipos se documentan por separado; no se suman artificialmente a la actividad oficial.
+**Actividad y evidencia de colaboración.** GitHub muestra el calendario oficial debajo del perfil. Aquí conservo estadísticas de repositorios y lenguajes, y enlaces a mis aportes; los commits pendientes de atribución se documentan por separado.
 
-[![Calendario público oficial de GitHub para 2026: instantánea anual fechada, distinta de la actividad total demostrable.](assets/actividad/calendario-2026.svg)](https://github.com/amaximilianorodri?tab=overview&from=2026-01-01&to=2026-12-31)
-
-**Consulta del 13 de octubre de 2026:** 2 contribuciones públicas en el calendario anual de 2026; 14 en el de 2025. Son instantáneas, no datos en vivo.
+**Datos consultados el 13 de octubre de 2026.** Las estadísticas son instantáneas, no datos en vivo.
 
 - **ASHAKids:** [landing vinculada a mi cuenta](https://github.com/sromansilva/ashakids-platform/commit/5dacd55), en una línea de desarrollo distinta de `main`.
 - **JMP:** [cambios de autoría confirmada](https://github.com/luisteransaucedo18-coder/JMP-PINGUS-INVENTARIO/commit/b316269), pendientes de vinculación automática a mi cuenta.
@@ -103,12 +129,10 @@ Sistema de materiales y operaciones con solicitudes, devoluciones, PDF y perfile
 
 [Actividad oficial actual](https://github.com/amaximilianorodri?tab=overview) · [Auditoría y soluciones](docs/AUDITORIA_CONTRIBUCIONES.md) · [Datos y alcance](assets/actividad/datos.json)
 
-<details>
-<summary><strong>Ver calendario 2025, repositorios y lenguajes</strong></summary>
-
-[![Calendario público oficial de GitHub para 2025, separado del año actual.](assets/actividad/calendario-2025.svg)](https://github.com/amaximilianorodri?tab=overview&from=2025-01-01&to=2025-12-31)
-
 ![Resumen de repositorios públicos propios y estrellas, sin sumar la actividad de equipos.](assets/actividad/resumen.svg)
+
+<details>
+<summary><strong>Ver lenguajes de los repositorios públicos propios</strong></summary>
 
 ![Lenguajes por bytes de repositorios públicos propios, excluyendo forks. No mide dominio ni autoría exclusiva.](assets/actividad/lenguajes.svg)
 

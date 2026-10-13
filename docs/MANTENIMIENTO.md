@@ -12,7 +12,7 @@ Sustituye la fecha por la fecha real de consulta. El generador consulta calendar
 
 Puede utilizar una sesión existente de Git Credential Manager sin guardar ni imprimir credenciales; también admite consultas públicas sujetas a los límites de GitHub. No pegues tokens en el repositorio.
 
-Después de ejecutarlo, actualiza la fecha escrita en el README y revisa las cifras y el año de sus imágenes. Si cambia el año, enlaza el nuevo calendario y conserva los anteriores. Una respuesta fallida no constituye una actualización válida. Las cifras no se actualizan automáticamente al abrir el perfil.
+Después de ejecutarlo, actualiza la fecha escrita en el README y revisa las cifras y el año de sus imágenes. El README utiliza los gráficos de repositorios y lenguajes. Los calendarios generados se conservan como archivo para la auditoría; no los vuelvas a insertar en el README porque GitHub ya muestra su calendario oficial. Una respuesta fallida no constituye una actualización válida. Las cifras no se actualizan automáticamente al abrir el perfil.
 
 ## Regenerar el diseño
 
@@ -43,3 +43,5 @@ La primera versión publicada está en el commit `e79f601`. Esta revisión se pr
 [Volver al perfil](../README.md)
 
 La segunda pasada visual se prepara en `codex/refine-cyberpunk-profile`, partiendo de la versión publicada `9faae28`. El informe de [refinamiento](REFINAMIENTO_VISUAL.md) recoge comprobaciones y límites. Esta revisión requiere autorización expresa antes de hacer push.
+
+La reorganización de proyectos se prepara sobre ese refinamiento en `codex/project-categories`. Consulta [su informe](PROYECTOS_REORGANIZADOS.md). Sigue pendiente autorización para publicar estas revisiones locales.

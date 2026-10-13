@@ -69,7 +69,7 @@ def main():
             c.text(40,14,title,20,INK)
             return c
         motion('nav-'+name,draw_nav,color)
-    cards=[('ashakids','ASHAKids','IDEA PROPIA / DESARROLLO EN EQUIPO',PINK),('lifexperience','LifeXperience','SIMULACION EDUCATIVA / FIGMA',CYAN),('manka','MANKA+','OLLAS COMUNES / PROTOTIPO',YELLOW),('lookmi','LOOKMI','AVATAR Y ESTILOS / MAKETHON',PINK),('jmp','JMP','FRONTEND / DATOS / COLABORACION',CYAN),('gamelab','GAMELAB 4.0','DISENO DE JUEGO / THREADBARE','#B7F46B'),('edukids','EduKids','EL ORIGEN / PROTOTIPO WEB',YELLOW),('utpliteapp','UTPLiteApp','ANDROID / PROTOTIPO ACADEMICO',CYAN)]
+    cards=[('jmp','JMP PINGUS','PRACTICAS / INVENTARIO / DESARROLLO',CYAN),('ashakids','ASHAKids','EDUKIDS / IDEA PROPIA / EQUIPO',PINK),('lifexperience','LifeXperience','SIMULACION EDUCATIVA / FIGMA',CYAN),('manka','MANKA+','OLLAS COMUNES / PROTOTIPO',YELLOW),('lookmi','LOOKMI','AVATAR Y ESTILOS / MAKETHON',PINK),('gamelab','GAMELAB 4.0 / NeuroEcho','DISENO DE JUEGO / THREADBARE','#B7F46B'),('edukids','EduKids','EL ORIGEN / PROTOTIPO WEB',YELLOW),('utpliteapp','UTPLiteApp','ANDROID / PROTOTIPO ACADEMICO',CYAN)]
     for i,(name,title,tag,color) in enumerate(cards,1):
         def draw_card(t):
             c=panel(600,65,title+' / '+tag)
@@ -78,6 +78,14 @@ def main():
             c.rect(562,15,20,20,'#261B38');c.pixel(567+round(math.sin(t*math.tau)*2),20,'>',1,color)
             return c
         motion('mission-'+name,draw_card,color)
+    categories=[('impact','INNOVACION E IMPACTO SOCIAL','heart',PINK),('design','DISENO Y PROTOTIPADO','web',CYAN),('team','DESARROLLO COLABORATIVO Y VIDEOJUEGOS','git','#B7F46B')]
+    for name,title,icon,color in categories:
+        def draw_category(t):
+            c=panel(600,43,title)
+            c.sprite(icon,14,13+round(math.sin(t*math.tau)*2),2,color)
+            c.text(42,11,title,19,INK)
+            return c
+        motion('category-'+name,draw_category,color)
     # Conversión de formato para entrega ligera; conserva el original generado.
     with Image.open(OUT/'ciudad-original.png') as im:
         im.save(OUT/'ciudad.webp',format='WEBP',quality=85,method=6)

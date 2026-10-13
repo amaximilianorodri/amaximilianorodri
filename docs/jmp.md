@@ -1,4 +1,8 @@
-# JMP · Mi participación en un sistema de inventario
+# JMP PINGUS · Prácticas y desarrollo del sistema de inventario
+
+## Mi experiencia actual
+
+Como practicante, participo actualmente en el desarrollo del sistema de inventario JMP PINGUS. Esta experiencia y su carácter actual fueron confirmados por mí para el portafolio. No se atribuyen fechas de contrato, un cargo adicional ni responsabilidad exclusiva sobre el sistema.
 
 ## Propósito
 

@@ -12,7 +12,7 @@ Prompt utilizado:
 
 Las tarjetas, la cabecera, los circuitos, los gráficos y los glifos son recursos creados para este perfil. Sus fuentes están en `tools/cyberpunk.py`, `tools/actualizar_actividad.py` y `tools/arcade.py`. Las tarjetas representan secciones del portafolio, no controles ejecutables dentro de GitHub.
 
-La cabecera mantiene un ciclo continuo suave de ocho segundos. Las otras catorce animaciones se reproducen una sola vez durante seis segundos y quedan en reposo, con alternativas PNG para movimiento reducido. Los SVG incluyen movimiento declarativo sin scripts para visores compatibles; el README utiliza sus equivalentes GIF porque GitHub no reproduce animación SVG. AMPI.EXE y PLAYER 01 forman parte de la identidad creativa de la referencia aportada; no representan cargos o niveles de experiencia.
+La cabecera mantiene un ciclo continuo suave de ocho segundos. Las otras diecisiete animaciones se reproducen una sola vez durante seis segundos y quedan en reposo, con alternativas PNG para movimiento reducido. Los SVG incluyen movimiento declarativo sin scripts para visores compatibles; el README utiliza sus equivalentes GIF porque GitHub no reproduce animación SVG. AMPI.EXE y PLAYER 01 forman parte de la identidad creativa de la referencia aportada; no representan cargos o niveles de experiencia.
 
 ## Capturas de proyectos
 

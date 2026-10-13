@@ -1,4 +1,4 @@
-# GAMELAB 4.0 · Threadbare
+# NeuroEcho · GAMELAB 4.0
 
 ## Contexto disponible
 
@@ -7,6 +7,10 @@ El repositorio compartido para contextualizar esta experiencia es [Threadbare de
 Es un fork de [Threadbare, de Endless](https://github.com/endlessm/threadbare). Su configuración identifica un proyecto Godot con compatibilidad 4.4. Esta información describe la tecnología del proyecto compartido; no expresa un nivel de dominio personal de Godot.
 
 UTP incluye GameLab entre sus [programas de empleabilidad](https://www.utp.edu.pe/servicios-universitarios/empleabilidad). Esa referencia institucional aporta contexto, pero no certifica mi participación, el equipo o un rol específico.
+
+## NeuroEcho, el juego del equipo
+
+NeuroEcho es el nombre del juego creado con nuestro equipo de GAMELAB 4.0, confirmado por mí para este portafolio. Se vincula al repositorio del equipo sobre Threadbare; no se inventa un repositorio separado, una demo ni mecánicas específicas que todavía no se han documentado.
 
 ## Mi participación
 
