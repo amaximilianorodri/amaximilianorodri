@@ -14,6 +14,8 @@ Participé en distintas tareas del proyecto y diseñé la propuesta de juego des
 
 Esta descripción se basa en mi confirmación personal. No implica la autoría del proyecto base de Endless ni un cargo de liderazgo, coordinación o dirección.
 
+La consulta autenticada confirmó que mi cuenta pertenece a la organización `Game-Lab-4-0-UTP-Group-7-Team-2`. Esto aporta contexto de equipo; no atribuye por sí solo archivos o funciones concretas.
+
 ## Evidencia pendiente de vincular
 
 La consulta de commits de la rama principal filtrada por `amaximilianorodri` no devolvió resultados. Eso no demuestra ausencia de participación: el trabajo podría estar en otras ramas, cuentas o actividades que no generan commits.

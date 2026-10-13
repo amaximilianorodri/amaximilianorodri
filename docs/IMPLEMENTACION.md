@@ -1,86 +1,52 @@
-# Implementación local · Portafolio arcade
+# Implementación del perfil cyberpunk
 
-## Alcance
+El perfil reúne desarrollo, diseño, innovación social y colaboración bajo la identidad creativa AMPI.EXE. La primera versión arcade publicada se conserva en el commit `e79f601`; esta revisión se desarrolla en `codex/cyberpunk-profile` y su publicación fue autorizada por la autora.
 
-El rediseño se preparó inicialmente en la carpeta local `PERFIL`, con Git inicializado y sin commits ni remoto. Después se creó el repositorio público `amaximilianorodri/amaximilianorodri` para alojar el perfil, conforme a la solicitud de publicación de la usuaria.
+El cambio afecta al README, documentación, recursos y generadores del perfil. No modifica aplicaciones, repositorios de equipos, visibilidad, biografía ni fijados. Los recursos anteriores se conservan.
 
-No se modificaron aplicaciones ni repositorios de los proyectos. No se eliminaron archivos ni se reescribió historial. El encargo de diseño inicialmente excluía commits y push; la solicitud posterior de subir los cambios autorizó la publicación del repositorio del perfil. Los casos de estudio son documentación propia y no reemplazan los README originales.
+## Contenido
 
-## Concepto visual
+ASHAKids conserva el origen de la idea desde EduKids y el aporte principal a la landing. JMP describe trabajo en frontend y backend. GAMELAB presenta el diseño de la propuesta del equipo sobre Threadbare, con créditos del proyecto base y pertenencia a la organización comprobada.
 
-La identidad combina ventanas arcade, tipografía de píxeles dibujada con glifos originales, un robot tecnológico propio, una terminal, corazones, estrellas, monedas y símbolos de categorías. El robot no representa la apariencia personal de la usuaria.
+LifeXperience, MANKA+ y LOOKMI incorporan capturas aportadas por su autora y enlaces a Figma. MANKA+ se plantea para abastecimiento y registro de familias beneficiarias de ollas comunes en Perú. LOOKMI propone transformar la foto de una mascota en un avatar editable para explorar estilos y cortes. Los objetivos del prototipo no se presentan como resultados operativos verificados.
 
-Paleta: morado `#392F4A`, coral `#F74F27`, amarillo `#FFC83C` y crema `#FFF4E6`, con cian `#60DED9` y un fondo oscuro `#241F32` como apoyo. No se utilizan logos oficiales de tecnologías, marcas de afiliación o porcentajes de dominio.
+Las primeras etapas se incluyen en una sección desplegable. Las herramientas se muestran con logotipos sin porcentajes de dominio o certificaciones inventadas.
 
-La estructura del README es Pantalla de inicio, Player profile, Skill inventory, Quest log, Project select y Next level. Las metáforas de videojuego son visuales: los objetivos, contribuciones y estados de los proyectos se describen profesionalmente en Markdown.
+## Recursos
 
-## Archivos y recursos
-
-| Archivo o grupo | Función |
+| Recurso | Función |
 | --- | --- |
-| `README.md` | Narrativa, navegación, inventario y proyectos |
-| `assets/cabecera.gif`, `.png`, `.svg` | Cabecera arcade, robot y terminal |
-| `assets/intereses.gif`, `.png`, `.svg` | Escritura progresiva: desarrollo, diseño y gestión |
-| `assets/separador.gif`, `.png`, `.svg` | Estrella que recorre una línea entre secciones |
-| `assets/ashakids.svg`, `jmp.svg`, `edukids.svg`, `utpliteapp.svg` | Tarjetas de selección de proyectos |
-| `assets/emblema.svg` | Código y creatividad como emblema propio |
-| `assets/inventario.svg` | Categorías web, datos, móvil y colaboración |
-| `assets/recorrido.svg` | Inspiración → EduKids → ASHAKids |
-| `assets/terminal.svg` | Terminal ilustrada para Next level |
-| `assets/heart.svg`, `star.svg`, `coin.svg`, `web.svg`, `data.svg`, `mobile.svg`, `git.svg`, `bot.svg` | Iconos originales reutilizables |
-| `tools/arcade.py` | Generador del sistema gráfico |
-| `tools/generar_recursos.py` | Punto de entrada para regenerar los recursos |
-| `docs/ashakids.md`, `jmp.md`, `edukids.md`, `utpliteapp.md`, `gamelab.md` | Casos de estudio conservados con aportes y limitaciones |
-| `docs/IMPLEMENTACION.md` | Informe actualizado de implementación |
+| `assets/cyberpunk/` | Ciudad, cabecera, animaciones y tarjetas |
+| `assets/proyectos/` | Capturas reales de tres prototipos |
+| `assets/logos/` | Diez insignias locales |
+| `assets/actividad/` | Datos públicos y gráficos fechados |
+| `docs/AUDITORIA_CONTRIBUCIONES.md` | Evidencia y soluciones |
+| `docs/lifexperience.md`, `manka.md`, `lookmi.md` | Casos de prototipos |
+| `docs/MANTENIMIENTO.md` | Actualización de recursos y datos |
+| `docs/CREDITOS_VISUALES.md` | Procedencia y prompt |
+| `tools/cyberpunk.py` | Generador visual |
+| `tools/actualizar_actividad.py` | Estadísticas públicas |
 
-Los siete recursos anteriores se rediseñaron; los recursos complementarios y el módulo arcade se añadieron. Se conservaron los casos de estudio y los archivos existentes. Las imágenes son ilustraciones editoriales, no capturas ficticias de productos.
+## Contribuciones
 
-Para regenerar: `python tools/generar_recursos.py`. Requiere Python, Pillow y una fuente del sistema Segoe UI o DejaVu Sans para los textos pequeños. La fuente pixelada se dibuja desde glifos definidos en el generador. No utiliza red, no instala dependencias y solo escribe recursos con nombres definidos en `assets/`.
+La consulta del 13 de octubre de 2026 encontró 14 contribuciones públicas en el calendario anual de 2025 y 2 en el de 2026. El perfil diferencia esos datos oficiales de la evidencia adicional de colaboración.
 
-## Animación y compatibilidad
+El trabajo de ASHAKids revisado está fuera de la rama predeterminada. Los commits de JMP confirmados por la autora no aparecen vinculados automáticamente a su cuenta; la asociación del correo requiere comprobación en GitHub. UTPLiteApp tiene commits vinculados de 2025. Threadbare es un fork y el diseño no se deduce de un calendario de commits.
 
-Se utilizan GIF locales porque GitHub documenta soporte para GIF y advierte que la vista de SVG no admite animación: [formatos y limitaciones](https://docs.github.com/en/repositories/working-with-files/using-files/working-with-non-code-files).
+Se configuró la identidad Git local del perfil con el usuario autenticado y su correo noreply. No se reescribió historial ni se generaron contribuciones artificiales.
 
-- Cabecera: 21.813 bytes; robot y elementos decorativos con movimiento suave. El texto queda estable.
-- Intereses: 4.330 bytes; escritura progresiva de una frase sobre desarrollo, diseño y gestión.
-- Separador: 10.917 bytes; una estrella recorre una línea.
+## Verificación y límites
 
-Cada animación dura 4.000 ms y se reproduce una vez, sin extensión de repetición infinita. No hay parpadeos rápidos, servicios de escritura externos ni animaciones de estadísticas.
+- Rutas locales comprobadas y 48 SVG válidos, sin scripts ni objetos HTML incrustados.
+- Quince GIF: ciclos de cuatro segundos, con alternativas PNG y equivalentes SVG animados sin scripts.
+- El renderizador de Markdown de GitHub conservó los quince elementos picture y sus reglas de movimiento reducido.
+- Previsualizaciones a 1100 y 390 píxeles en tema claro y oscuro: 33 imágenes cargadas, sin desbordamiento horizontal.
+- En las cuatro combinaciones, el navegador seleccionó los quince PNG al activar movimiento reducido.
+- Sintaxis de los generadores validada y diff sin errores de espacios.
 
-Cada GIF tiene un PNG alternativo seleccionado con `<picture>` y `prefers-reduced-motion: reduce`. El [formato picture documentado por GitHub](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github) se usó sin CSS o JavaScript en el README. Su renderizador conservó los tres elementos picture y las tres reglas de movimiento reducido en la comprobación.
 
-Todos los recursos utilizados tienen texto alternativo. Los conceptos relevantes también aparecen como texto Markdown. El enlace final permite abrir la cabecera estática.
+La revisión comprueba rutas, SVG, GIF y previsualización en escritorio y móvil, con alternativas de movimiento reducido. El README no incluye JavaScript ni hojas de estilo incrustadas.
 
-## Proyectos y atribución
+Los gráficos son instantáneas locales. El acceso automatizado a Figma no pudo inspeccionar el contenido de los enlaces: la evidencia visual son las capturas proporcionadas. Los informes no se han recibido y las aplicaciones no se ejecutaron como parte de este rediseño.
 
-ASHAKids destaca por el origen de la idea desde EduKids y el aporte principal a la landing. JMP muestra trabajo en frontend, backend y flujos operativos. EduKids documenta la primera etapa. UTPLiteApp aporta experiencia colaborativa Android.
-
-GAMELAB 4.0 aparece en Quest log como experiencia de equipo. La usuaria confirmó participación en distintas tareas y diseño de la propuesta de juego del equipo sobre Threadbare. El repositorio es un fork del proyecto de Endless, cuyos créditos y licencias se conservan. Está pendiente enlazar evidencia específica de su aporte; no se atribuyen cargos ni autoría del juego base.
-
-Los README públicos de ASHAKids, JMP, EduKids y Threadbare se volvieron a consultar. UTPLiteApp se presenta con la evidencia de código y commits de la revisión anterior; no se inventa un README original inexistente.
-
-MirrorMind sigue fuera de los destacados mientras se revisa el posible secreto señalado en Jenkinsfile. No se reproduce el valor ni se interviene ese repositorio. ProyectoHeDe puede añadirse después de precisar el aporte personal. Los proyectos no accesibles no se describen como revisados o modificados.
-
-JMP se presenta sin datos empresariales, esquemas internos, credenciales, endpoints privados ni capturas de operación. No se han copiado imágenes o código de terceros.
-
-## Comprobaciones
-
-- 64 referencias revisadas: rutas, imágenes y anclas locales correctas.
-- Los 19 enlaces externos únicos respondieron HTTP 200.
-- 19 SVG válidos, sin scripts, referencias externas o animaciones internas.
-- Tres GIF verificados: duración, fotogramas y ausencia de bucle infinito; sus alternativas PNG existen.
-- Previsualización en navegador a 1100 y 390 píxeles, en claro y oscuro: imágenes cargadas y sin desbordamiento horizontal.
-- Movimiento reducido: el navegador seleccionó los tres PNG en las cuatro combinaciones de tamaño y tema.
-- Inspección visual de la cabecera y las vistas de escritorio y móvil.
-- Revisión de patrones seleccionados de credenciales y espacios al final de línea, sin incidencias. Esto no sustituye una auditoría completa de secretos.
-- Estado Git revisado antes de publicar: solo documentación, recursos y generadores propios del perfil; se preparó una primera versión sin cambios en aplicaciones.
-
-La previsualización utiliza estilos aproximados de lectura de GitHub. La compatibilidad del marcado se comprobó con su renderizador, pero falta revisar el perfil publicado y el comportamiento de las imágenes alojadas allí. No se ejecutaron las aplicaciones ni sus pruebas.
-
-## Pendientes
-
-El repositorio de destino es `amaximilianorodri/amaximilianorodri`. README, assets y docs conservan sus rutas relativas. GitHub exige que el repositorio del perfil sea público: [requisitos oficiales](https://docs.github.com/en/account-and-profile/how-tos/profile-customization/managing-your-profile-readme). Se creó un repositorio público nuevo para este fin con autorización de la usuaria; no se cambió la visibilidad de repositorios existentes.
-
-Solo se utiliza la cuenta GitHub como contacto verificado. Las capturas reales de ASHAKids, EduKids y UTPLiteApp pueden prepararse después de comprobar permisos y datos. Para JMP, cualquier captura requiere autorización empresarial y datos sintéticos. No se insertaron imágenes inexistentes.
-
-Para ampliar GAMELAB conviene enlazar un documento de diseño, una rama, cambios o una entrega del equipo que muestre el trabajo confirmado. Los fijados y la biografía de la cuenta siguen sin modificarse.
+[Volver al perfil](../README.md)
