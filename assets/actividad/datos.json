@@ -8,8 +8,8 @@
       "fork": false,
       "default_branch": "main",
       "stargazers_count": 0,
-      "size": 0,
-      "pushed_at": "2026-10-13T13:51:10Z"
+      "size": 4873,
+      "pushed_at": "2026-10-13T14:45:30Z"
     },
     {
       "full_name": "amaximilianorodri/EduKids",
@@ -58,7 +58,7 @@
     }
   ],
   "languages_bytes_owned_nonfork": {
-    "Python": 10946,
+    "Python": 24228,
     "CSS": 240946,
     "HTML": 155480,
     "JavaScript": 55411,

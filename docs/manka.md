@@ -1,5 +1,7 @@
 # MANKA+ · Tecnología para ollas comunes en Perú
 
+<picture><source media="(prefers-reduced-motion: reduce)" srcset="../assets/cyberpunk/mission-manka.png"><img src="../assets/cyberpunk/mission-manka.gif" width="480" alt="Tarjeta editorial de manka: animación breve con alternativa estática."></picture>
+
 <img src="../assets/proyectos/manka.png" width="300" alt="Captura real del prototipo móvil MANKA+: portada en modo administrador con el emblema de una olla.">
 
 ## Problema y propósito

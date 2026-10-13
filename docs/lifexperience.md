@@ -1,5 +1,7 @@
 # LifeXperience · Practica la vida antes de vivirla
 
+<picture><source media="(prefers-reduced-motion: reduce)" srcset="../assets/cyberpunk/mission-lifexperience.png"><img src="../assets/cyberpunk/mission-lifexperience.gif" width="480" alt="Tarjeta editorial de lifexperience: animación breve con alternativa estática."></picture>
+
 ![Captura real aportada por la autora: bienvenida de LifeXperience, avatar y opciones de acceso.](../assets/proyectos/lifexperience.png)
 
 ## Propuesta

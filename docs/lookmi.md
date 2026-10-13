@@ -1,5 +1,7 @@
 # LOOKMI · Explorar estilos para tu mascota
 
+<picture><source media="(prefers-reduced-motion: reduce)" srcset="../assets/cyberpunk/mission-lookmi.png"><img src="../assets/cyberpunk/mission-lookmi.gif" width="480" alt="Tarjeta editorial de lookmi: animación breve con alternativa estática."></picture>
+
 ![Captura real aportada por la autora: Avatar Studio de LOOKMI con una mascota y categorías de accesorios.](../assets/proyectos/lookmi.png)
 
 ## Propuesta

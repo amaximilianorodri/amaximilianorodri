@@ -20,6 +20,23 @@ Las fechas de autor y de integración de las muestras de JMP difieren solo en se
 
 [GitHub explica los criterios de rama, correo y repositorio para contar contribuciones](https://docs.github.com/en/account-and-profile/reference/profile-contributions-reference). [Su guía de contribuciones ausentes detalla cómo revisar la atribución](https://docs.github.com/en/account-and-profile/how-tos/contribution-settings/troubleshooting-missing-contributions).
 
+## Revisión de atribución durante el refinamiento
+
+El 13 de octubre se volvió a comprobar el commit publicado del perfil `9faae28`: GitHub lo vincula a `amaximilianorodri`. La identidad local de esta carpeta coincide con el noreply de la cuenta autenticada. Esto confirma una corrección válida para nuevos commits del perfil, sin modificar los de otras personas.
+
+Los tres commits de JMP siguen sin cuenta asociada. La consulta autenticada de la lista de correos devuelve HTTP 404 con este acceso, por lo que no se puede comprobar ni corregir desde aquí la vinculación de la dirección histórica. El 404 no demuestra que la cuenta carezca de direcciones configuradas.
+
+Pasos que pueden resolver el caso sin reescribir historial:
+
+1. En tu copia local de JMP, revisa el correo de un commit confirmado como propio: `git show --no-patch --format="%ae" b316269`. No pegues esa dirección en el README ni en un informe público.
+2. Si la dirección te pertenece, revisa [Settings → Emails](https://github.com/settings/emails). Añádela o completa la verificación cuando corresponda. Si no te pertenece o no puedes asociarla a esta cuenta, no atribuyas ese correo mediante una reescritura del equipo.
+3. Para nuevos cambios, configura el noreply que muestra GitHub en cada checkout propio: `git config --local user.email "TU_NOREPLY_DE_GITHUB"`. Sustituye el marcador antes de ejecutarlo. La configuración del perfil no se aplica automáticamente a JMP.
+4. Después del procesamiento de GitHub, vuelve a comprobar la cuenta de autor del commit y el calendario. No se promete un aumento de cifras: también deben cumplirse los criterios de rama, repositorio y fecha.
+
+En ASHAKids, la comparación continúa mostrando 33 commits por delante y uno por detrás de `main`. La integración requiere la revisión normal del equipo; queda fuera del alcance de este refinamiento. No se cambió su rama predeterminada ni se abrió una PR en su nombre.
+
+Se volvió a consultar el calendario público y se conservaron sus resultados: 14 en 2025 y 2 en 2026. Se actualizó el catálogo público y los bytes de lenguajes reales; no se mezclaron aportes pendientes de atribución con el calendario.
+
 ## Los correos históricos
 
 Para JMP, abrir uno de los commits propios y revisar localmente el correo de autor, sin publicarlo en informes. Si es una dirección propia, comprobar si está asociada a esta cuenta y seguir las instrucciones de GitHub para añadirla. No se añade una dirección de otra persona ni se cambia la autoría del equipo.

@@ -20,7 +20,7 @@ Después de ejecutarlo, actualiza la fecha escrita en el README y revisa las cif
 python tools/cyberpunk.py
 ```
 
-Requiere Pillow. Utiliza los glifos originales de `tools/arcade.py` y el arte conservado en `assets/cyberpunk/ciudad-original.png`. Produce SVG animados para visores compatibles y GIF con ciclos suaves de cuatro segundos y alternativas PNG. En el README se utilizan GIF porque GitHub no reproduce las animaciones SVG. Para actualizar textos no es necesario volver a generar el arte con inteligencia artificial.
+Requiere Pillow. Utiliza los glifos originales de `tools/arcade.py` y el arte conservado en `assets/cyberpunk/ciudad-original.png`. Produce SVG animados para visores compatibles y GIF con alternativas PNG: cabecera continua de ocho segundos y animaciones secundarias de seis segundos sin repetición. En el README se utilizan GIF porque GitHub no reproduce las animaciones SVG. Para actualizar textos no es necesario volver a generar el arte con inteligencia artificial.
 
 Los recursos arcade anteriores siguen disponibles; su generador es `python tools/generar_recursos.py`.
 
@@ -41,3 +41,5 @@ Comprueba rutas, anclas y renderizado en escritorio y móvil. Activa movimiento 
 La primera versión publicada está en el commit `e79f601`. Esta revisión se prepara en `codex/cyberpunk-profile`, conservando la versión anterior como referencia. No reescribas commits de proyectos colaboradores para modificar el calendario: utiliza las soluciones de la [auditoría](AUDITORIA_CONTRIBUCIONES.md).
 
 [Volver al perfil](../README.md)
+
+La segunda pasada visual se prepara en `codex/refine-cyberpunk-profile`, partiendo de la versión publicada `9faae28`. El informe de [refinamiento](REFINAMIENTO_VISUAL.md) recoge comprobaciones y límites. Esta revisión requiere autorización expresa antes de hacer push.

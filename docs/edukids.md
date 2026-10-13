@@ -1,5 +1,7 @@
 # EduKids · El inicio de una idea
 
+<picture><source media="(prefers-reduced-motion: reduce)" srcset="../assets/cyberpunk/mission-edukids.png"><img src="../assets/cyberpunk/mission-edukids.gif" width="480" alt="Tarjeta editorial de edukids: animación breve con alternativa estática."></picture>
+
 ## Contexto y propósito
 
 EduKids surgió de mi interés por llevar actividades lúdicas a un entorno digital, inspirado en la experiencia de acompañar a mis hermanitos. Es una primera etapa de mi trayectoria y el origen conceptual de la propuesta que posteriormente evolucionó hacia ASHAKids.

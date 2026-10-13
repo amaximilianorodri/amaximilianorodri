@@ -40,10 +40,12 @@ def divider(t=1):
     return c
 
 
-def motion(name,draw,color=CYAN):
+def motion(name,draw,color=CYAN,continuous=False):
     c=draw(1);c.png().save(OUT/(name+'.png'),optimize=True)
     # SVG animado para visores compatibles; GitHub muestra el GIF equivalente.
-    svg=c.svg().replace('</svg>',f'<g aria-hidden="true"><rect x="8" y="{c.h-2}" width="20" height="2" fill="{color}"><animate attributeName="x" from="8" to="{c.w-28}" dur="4s" repeatCount="indefinite"/></rect></g></svg>')
+    seconds=8 if continuous else 6
+    repeat='indefinite' if continuous else '1'
+    svg=c.svg().replace('</svg>',f'<g aria-hidden="true"><rect x="8" y="{c.h-2}" width="20" height="2" fill="{color}"><animate attributeName="x" from="8" to="{c.w-28}" dur="{seconds}s" repeatCount="{repeat}" fill="freeze"/></rect></g></svg>')
     (OUT/(name+'.svg')).write_text(svg,encoding='utf-8')
     palette=c.png().quantize(colors=32)
     frames=[]
@@ -51,19 +53,20 @@ def motion(name,draw,color=CYAN):
         frame=draw(i/39)
         frame.rect(8+round((frame.w-36)*i/39),frame.h-2,20,2,color)
         frames.append(frame.png().quantize(palette=palette,dither=Image.Dither.NONE))
-    frames[0].save(OUT/(name+'.gif'),save_all=True,append_images=frames[1:],duration=100,optimize=True,disposal=1,loop=0)
+    options={'loop':0} if continuous else {}
+    frames[0].save(OUT/(name+'.gif'),save_all=True,append_images=frames[1:],duration=seconds*25,optimize=True,disposal=1,**options)
 
 
 def main():
     OUT.mkdir(exist_ok=True)
     for name,draw in [('identidad',header),('intereses',typing),('circuito',divider)]:
-        motion(name,draw)
+        motion(name,draw,continuous=name=='identidad')
     nav=[('profile','PLAYER PROFILE','Formación, intereses y enfoque','web',CYAN),('missions','MISSION SELECT','Proyectos, prototipos y aportes','star',PINK),('activity','CONTRIBUTION MAP','Actividad oficial y colaboración','git','#B7F46B'),('skills','SKILL TREE','Herramientas y aprendizaje','coin',YELLOW)]
     for name,title,subtitle,icon,color in nav:
         def draw_nav(t):
-            c=panel(300,79,title)
-            c.sprite(icon,14,12+round(math.sin(t*math.tau)*2),2,color)
-            c.text(14,36,title,16,INK);c.text(14,61,subtitle,10,'#BCB0D0')
+            c=panel(300,49,title+' / '+subtitle)
+            c.sprite(icon,12,15+round(math.sin(t*math.tau)*2),2,color)
+            c.text(40,14,title,20,INK)
             return c
         motion('nav-'+name,draw_nav,color)
     cards=[('ashakids','ASHAKids','IDEA PROPIA / DESARROLLO EN EQUIPO',PINK),('lifexperience','LifeXperience','SIMULACION EDUCATIVA / FIGMA',CYAN),('manka','MANKA+','OLLAS COMUNES / PROTOTIPO',YELLOW),('lookmi','LOOKMI','AVATAR Y ESTILOS / MAKETHON',PINK),('jmp','JMP','FRONTEND / DATOS / COLABORACION',CYAN),('gamelab','GAMELAB 4.0','DISENO DE JUEGO / THREADBARE','#B7F46B'),('edukids','EduKids','EL ORIGEN / PROTOTIPO WEB',YELLOW),('utpliteapp','UTPLiteApp','ANDROID / PROTOTIPO ACADEMICO',CYAN)]

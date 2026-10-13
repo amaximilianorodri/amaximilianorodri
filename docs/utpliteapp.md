@@ -1,5 +1,7 @@
 # UTPLiteApp · Experiencia colaborativa en Android
 
+<picture><source media="(prefers-reduced-motion: reduce)" srcset="../assets/cyberpunk/mission-utpliteapp.png"><img src="../assets/cyberpunk/mission-utpliteapp.gif" width="480" alt="Tarjeta editorial de utpliteapp: animación breve con alternativa estática."></picture>
+
 ## Propósito e implementación
 
 Prototipo académico Android que explora la consulta de información estudiantil mediante pantallas de calendario, anuncios, cursos y acceso. El proyecto utiliza **Kotlin, Java y layouts XML**.

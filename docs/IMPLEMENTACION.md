@@ -35,7 +35,10 @@ El trabajo de ASHAKids revisado está fuera de la rama predeterminada. Los commi
 
 Se configuró la identidad Git local del perfil con el usuario autenticado y su correo noreply. No se reescribió historial ni se generaron contribuciones artificiales.
 
-## Verificación y límites
+## Verificación y límites de la versión publicada
+
+Las siguientes cifras describen la primera edición cyberpunk publicada en `9faae28`. Para el estado local actual, consulta el [informe de la segunda pasada](REFINAMIENTO_VISUAL.md).
+
 
 - Rutas locales comprobadas y 48 SVG válidos, sin scripts ni objetos HTML incrustados.
 - Quince GIF: ciclos de cuatro segundos, con alternativas PNG y equivalentes SVG animados sin scripts.
