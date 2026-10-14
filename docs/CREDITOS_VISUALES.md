@@ -1,5 +1,13 @@
 # Créditos visuales
 
+## Universo anime de AMPI.EXE · 14 de octubre de 2026
+
+Ilustración generada con la herramienta integrada **imagegen** a partir de la imagen de referencia aportada por la autora. Se conserva el [arte original](../assets/anime/arte-original.png); sus tres escenas se usan como banners decorativos, sin atribuirlas a proyectos reales. La referencia no se publica en este repositorio.
+
+Doraemon y sus gadgets son referencias a personajes y creaciones de Fujiko F. Fujio; este portafolio personal no indica afiliación oficial. El arte generado no es una captura ni una ilustración oficial. Los paneles, textos y animaciones de interfaz se construyeron para este perfil con `tools/anime.py`. Los logotipos de herramientas reutilizan los recursos existentes y sus créditos detallados más abajo.
+
+El prompt completo utilizado está en [assets/anime/PROMPT.txt](../assets/anime/PROMPT.txt). La generación usó el modo integrado, sin API ni CLI externa; el empaquetado extrae las tres franjas y coloca el texto del perfil mediante Pillow.
+
 ## Ciudad cyberpunk
 
 Ilustración original generada con la herramienta integrada de generación de imágenes para este perfil. Se conservan el [PNG original](../assets/cyberpunk/ciudad-original.png) y la [versión WebP](../assets/cyberpunk/ciudad.webp). La conversión de formato conserva el contenido. Es arte decorativo, no una captura de un proyecto.

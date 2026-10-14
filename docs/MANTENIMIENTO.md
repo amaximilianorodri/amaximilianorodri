@@ -1,5 +1,9 @@
 # Mantenimiento del perfil
 
+## Diseño actual: anime retrofuturista
+
+El rediseño local del 14 de octubre de 2026 usa `assets/anime/`. Ejecuta `python tools/anime.py` para regenerar sus paneles y `python tools/verificar_anime.py` para validar rutas y crear `preview/README.html`. Consulta el [informe del rediseño](REDISENO_ANIME.md). Las instrucciones cyberpunk que siguen se conservan como historial y no regeneran el diseño actual.
+
 ## Actualizar la actividad
 
 Desde la carpeta del repositorio, con Python disponible:

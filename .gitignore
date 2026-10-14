@@ -1,0 +1,4 @@
+# Artefactos locales de validación; se regeneran con tools/verificar_anime.py.
+preview/
+__pycache__/
+*.pyc
