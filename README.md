@@ -37,176 +37,85 @@ Combino desarrollo, diseño de interfaces, análisis de procesos y organización
 
 ## Proyectos destacados
 
-Experiencia actual → una idea que creció → innovación e impacto → diseño → videojuegos.
-
-Las ilustraciones de las tarjetas son **arte decorativo**; las capturas reales y la evidencia están en los casos. Cada enlace distingue mi participación del trabajo del equipo.
+Cinco aventuras donde conecto tecnología, creatividad y propósito. Las ilustraciones son decorativas; los casos enlazados conservan el contexto y los créditos.
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-<a href="docs/jmp.md"><img src="assets/anime/proyecto-jmp.png" width="100%" alt="01 · JMP PINGUS. Prácticas y desarrollo del sistema de inventario. React, TypeScript y Supabase."></a>
+<a href="docs/jmp.md"><img src="assets/anime/proyecto-jmp.png" width="100%" alt="01 · JMP PINGUS"></a>
 
-<strong>01 · JMP PINGUS</strong><br>
-Mi experiencia actual como practicante. Participo en frontend, backend, servicios y lógica de datos del inventario.<br><br>
-React · TypeScript · Tailwind CSS · Supabase · PostgreSQL · pdf-lib<br><br>
-<a href="https://github.com/luisteransaucedo18-coder/JMP-PINGUS-INVENTARIO">Repositorio ↗</a> · <a href="docs/jmp.md">Mi participación →</a>
-
-</td>
-<td width="50%" valign="top">
-
-<a href="docs/ashakids.md"><img src="assets/anime/proyecto-ashakids.png" width="100%" alt="02 · EduKids a ASHAKids. Una idea familiar que creció en equipo. Prototipo inicial HTML, CSS y JavaScript; interfaz colaborativa React y TypeScript."></a>
-
-<strong>02 · EduKids → ASHAKids</strong><br>
-De acompañar a mis hermanitos con actividades hechas a mano a una propuesta construida en equipo. Idea original y trabajo principalmente en la landing.<br><br>
-EduKids: HTML · CSS · JavaScript<br>
-ASHAKids: React · TypeScript; backend del equipo: FastAPI · PostgreSQL<br><br>
-<a href="https://amaximilianorodri.github.io/EduKids/">Demo inicial ↗</a> · <a href="https://github.com/sromansilva/ashakids-platform/tree/dev">ASHAKids ↗</a> · <a href="docs/ashakids.md">Historia →</a>
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<a href="docs/lifexperience.md"><img src="assets/anime/proyecto-impacto.png" width="100%" alt="03 · LifeXperience y MANKA+. Innovación educativa e impacto social. Propuestas y prototipos en Figma."></a>
-
-<strong>03 · LifeXperience · MANKA+</strong><br>
-Simulaciones educativas y gamificación en LifeXperience; abastecimiento y seguimiento de beneficiarios de ollas comunes en MANKA+.<br><br>
-Mi participación: propuesta y prototipos en Figma.<br><br>
-<a href="https://www.figma.com/make/PEM0hl8lFPZMcPFT7gFbYG/Next-steps-discussion">LifeXperience ↗</a> · <a href="https://www.figma.com/proto/E2MQIJzdnrB3AHdduSVq4r/Manka-3.0?node-id=22-2&amp;starting-point-node-id=22%3A2">MANKA+ ↗</a><br>
-<a href="docs/lifexperience.md">Caso LifeXperience →</a> · <a href="docs/manka.md">Caso MANKA+ →</a>
+<p><strong>01 · JMP PINGUS</strong></p>
+<p>Prácticas actuales: participo en el frontend, backend y la lógica de datos del sistema de inventario.</p>
+<p><img src="assets/anime/badges/react.png" height="22" width="57" alt="React"> <img src="assets/anime/badges/typescript.png" height="22" width="84" alt="TypeScript"> <img src="assets/anime/badges/tailwind.png" height="22" width="96" alt="Tailwind CSS"> <img src="assets/anime/badges/supabase.png" height="22" width="79" alt="Supabase"> <img src="assets/anime/badges/postgresql.png" height="22" width="122" alt="PostgreSQL / SQL"> <img src="assets/anime/badges/pdf-lib.png" height="22" width="64" alt="pdf-lib"><br><img src="assets/anime/badges/git.png" height="22" width="43" alt="Git"> <img src="assets/anime/badges/github.png" height="22" width="66" alt="GitHub"></p>
+<p><strong><a href="https://github.com/luisteransaucedo18-coder/JMP-PINGUS-INVENTARIO">↗ Repositorio</a> · <a href="docs/jmp.md">Mi participación →</a></strong></p>
 
 </td>
 <td width="50%" valign="top">
 
-<a href="docs/lookmi.md"><img src="assets/anime/proyecto-diseno.png" width="100%" alt="04 · LOOKMI y MirrorMind. Diseño, prototipado y experimentación. Figma, React y TypeScript."></a>
+<a href="docs/ashakids.md"><img src="assets/anime/proyecto-ashakids.png" width="100%" alt="02 · EduKids → ASHAKids"></a>
 
-<strong>04 · LOOKMI · MirrorMind</strong><br>
-Avatares de mascotas y exploración visual en LOOKMI; interfaces y simulaciones de análisis emocional en MirrorMind.<br><br>
-LOOKMI: prototipo en Figma Make durante el Makethon de Trujillo.<br>
-MirrorMind: React · TypeScript; revisión técnica pendiente.<br><br>
-<a href="https://www.figma.com/make/QWhvi0W8B2Do0OfQGDDvJZ/Idea-Development-Support">LOOKMI ↗</a> · <a href="https://github.com/amaximilianorodri/MirrorMind">MirrorMind ↗</a> · <a href="docs/lookmi.md">Caso LOOKMI →</a>
+<p><strong>02 · EduKids → ASHAKids</strong></p>
+<p>Una idea nacida al acompañar a mis hermanitos, que creció en equipo. Mi aporte: idea original y trabajo principalmente en la landing.</p>
+<p><strong>EduKids</strong><br><img src="assets/anime/badges/html.png" height="22" width="60" alt="HTML"> <img src="assets/anime/badges/css.png" height="22" width="48" alt="CSS"> <img src="assets/anime/badges/javascript.png" height="22" width="80" alt="JavaScript"><br><strong>ASHAKids · interfaz</strong><br><img src="assets/anime/badges/react.png" height="22" width="57" alt="React"> <img src="assets/anime/badges/typescript.png" height="22" width="84" alt="TypeScript"><br><strong>Backend del equipo</strong><br><img src="assets/anime/badges/python.png" height="22" width="66" alt="Python"> <img src="assets/anime/badges/fastapi.png" height="22" width="66" alt="FastAPI"> <img src="assets/anime/badges/postgresql.png" height="22" width="122" alt="PostgreSQL / SQL"><br><sub>Implementación colaborativa; no se atribuye exclusivamente a mí.</sub></p>
+<p><strong><a href="https://amaximilianorodri.github.io/EduKids/">↗ Demo inicial</a> · <a href="https://github.com/sromansilva/ashakids-platform/tree/dev">ASHAKids →</a> · <a href="docs/ashakids.md">Ver caso →</a></strong></p>
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-<a href="docs/gamelab.md"><img src="assets/anime/proyecto-gamelab.png" width="100%" alt="05 · NeuroEcho y GAMELAB 4.0. Diseño de la propuesta del juego en equipo. Godot; fork de Threadbare y créditos de Endless."></a>
+<a href="docs/lifexperience.md"><img src="assets/anime/proyecto-lifexperience.png" width="100%" alt="03 · LifeXperience"></a>
 
-<strong>05 · NeuroEcho · GAMELAB 4.0</strong><br>
-Juego creado con mi equipo, Grupo 7, equipo 2. Participé en distintas tareas y en el diseño de la propuesta.<br><br>
-Godot · Proyecto sobre Threadbare · Créditos originales de Endless conservados.<br><br>
-<a href="https://github.com/Game-Lab-4-0-UTP-Group-7-Team-2/threadbare">Repositorio ↗</a> · <a href="docs/gamelab.md">Contexto y contribución →</a>
+<p><strong>03 · LifeXperience</strong></p>
+<p>Simulaciones educativas, historias interactivas y gamificación. Mi participación: propuesta y prototipo en Figma Make.</p>
+<p><img src="assets/anime/badges/figma.png" height="22" width="60" alt="Figma"><br><sub>Prototipo. Integración de backend no verificada.</sub></p>
+<p><strong><a href="https://www.figma.com/make/PEM0hl8lFPZMcPFT7gFbYG/Next-steps-discussion">↗ Ver prototipo</a> · <a href="docs/lifexperience.md">Ver caso →</a></strong></p>
 
 </td>
 <td width="50%" valign="top">
 
-<a href="docs/utpliteapp.md"><img src="assets/anime/proyecto-otros.png" width="100%" alt="Otras aventuras. UTPLiteApp y ProyectoHeDe. Desarrollo colaborativo Android y web."></a>
+<a href="https://github.com/amaximilianorodri/MirrorMind"><img src="assets/anime/proyecto-mirrormind.png" width="100%" alt="04 · MirrorMind"></a>
 
-<strong>Otras aventuras en equipo</strong><br>
-UTPLiteApp: prototipo académico Android; mis cambios incluyen calendario, anuncios y login.<br>
-ProyectoHeDe: sitio institucional estático; aporte detallado pendiente de precisar.<br><br>
-Kotlin · Java · XML / HTML · CSS · JavaScript<br><br>
-<a href="https://github.com/sromansilva/UTPLiteApp">UTPLiteApp ↗</a> · <a href="https://github.com/j3zkills/ProyectoHeDe">ProyectoHeDe ↗</a> · <a href="docs/utpliteapp.md">Mis contribuciones →</a>
+<p><strong>04 · MirrorMind</strong></p>
+<p>Exploración de interfaces y análisis emocional. Varias vistas son simulaciones; revisión técnica pendiente, sin atribuir validez clínica.</p>
+<p><img src="assets/anime/badges/react.png" height="22" width="57" alt="React"> <img src="assets/anime/badges/typescript.png" height="22" width="84" alt="TypeScript"></p>
+<p><strong><a href="https://github.com/amaximilianorodri/MirrorMind">↗ Explorar repositorio</a></strong></p>
 
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<a href="docs/gamelab.md"><img src="assets/anime/proyecto-gamelab.png" width="100%" alt="05 · GAMELAB 4.0"></a>
+
+<p><strong>05 · GAMELAB 4.0</strong></p>
+<p>NeuroEcho, creado con mi equipo. Participé en distintas tareas y en el diseño de la propuesta del juego.</p>
+<p><img src="assets/anime/badges/godot.png" height="22" width="61" alt="Godot"><br><sub>Proyecto sobre Threadbare. Créditos de Endless conservados; mi aporte confirmado es el diseño de la propuesta.</sub></p>
+<p><strong><a href="https://github.com/Game-Lab-4-0-UTP-Group-7-Team-2/threadbare">↗ Repositorio del equipo</a> · <a href="docs/gamelab.md">Ver caso →</a></strong></p>
+
+</td>
+<td width="50%" valign="top">
+<img src="assets/anime/frase.png" width="100%" alt="No se trata de ser el mejor, sino de ser una mejor versión de ti cada día. Estrellas y una puerta rosa hacia la próxima aventura.">
+<p align="center">Pequeños pasos, nuevas aventuras. 💙</p>
 </td>
 </tr>
 </table>
 
-### Historias, créditos y evidencia
-
 <details>
-<summary><strong>01 · JMP PINGUS: alcance y enlaces a mis cambios</strong></summary>
+<summary><strong>Otra experiencia · UTPLiteApp</strong></summary>
 
-**Mi experiencia actual como practicante:** participo en el desarrollo del sistema de inventario JMP PINGUS y en sus iteraciones de mejora.
+<a href="docs/utpliteapp.md"><img src="assets/anime/proyecto-utpliteapp.png" width="420" alt="UTPLiteApp · Prototipo académico Android, desarrollado en equipo."></a>
 
-El sistema organiza materiales y operaciones mediante solicitudes, devoluciones, PDF y perfiles. **Mi aporte:** cambios en frontend, backend, servicios y lógica de datos. **Estado:** implementación colaborativa con pruebas en el repositorio; el caso público omite información empresarial.
+**UTPLiteApp · Desarrollo colaborativo Android**
 
-**Tecnologías del proyecto:** React, TypeScript, Tailwind CSS, Supabase, PostgreSQL y pdf-lib.
+Mis cambios incluyen calendario, anuncios y login. Prototipo con datos estáticos y acceso de demostración.
 
-[Repositorio](https://github.com/luisteransaucedo18-coder/JMP-PINGUS-INVENTARIO) · [Mi participación](docs/jmp.md) · [Solicitudes, PDF y devoluciones](https://github.com/luisteransaucedo18-coder/JMP-PINGUS-INVENTARIO/commit/b316269)
+<img src="assets/anime/badges/kotlin.png" height="22" width="59" alt="Kotlin"> <img src="assets/anime/badges/java.png" height="22" width="50" alt="Java"> <img src="assets/anime/badges/xml.png" height="22" width="52" alt="XML"> <img src="assets/anime/badges/git.png" height="22" width="43" alt="Git"> <img src="assets/anime/badges/github.png" height="22" width="66" alt="GitHub">
 
-</details>
+[Repositorio ↗](https://github.com/sromansilva/UTPLiteApp) · [Mi participación →](docs/utpliteapp.md)
 
-<details>
-<summary><strong>02 · EduKids → ASHAKids: de dónde nació la idea</strong></summary>
-
-Durante la pandemia acompañé a mis hermanitos en sus dificultades de lenguaje y comunicación con actividades hechas a mano. Esa experiencia dio origen a **EduKids** y creció hacia **ASHAKids**, una propuesta más completa construida en equipo.
-
-**EduKids — el inicio:** impulsé y desarrollé un prototipo web de actividades infantiles con HTML, CSS y JavaScript; conserva secciones incompletas.
-
-**ASHAKids — la evolución:** actividades lúdicas, seguimiento orientativo y conexión entre familias y profesionales. **Mi aporte:** idea original y trabajo principalmente en la landing. **Estado:** desarrollo colaborativo en `dev`, con React y TypeScript en la interfaz y FastAPI y PostgreSQL en el backend del equipo; eficacia educativa pendiente de validación.
-
-Este recorrido describe la evolución de la idea, sin atribuir una migración directa de código entre ambos proyectos.
-
-[EduKids: repositorio](https://github.com/amaximilianorodri/EduKids) · [Demo inicial](https://amaximilianorodri.github.io/EduKids/) · [Caso de EduKids](docs/edukids.md)
-
-[Repositorio y desarrollo](https://github.com/sromansilva/ashakids-platform/tree/dev) · [Historia y contribución](docs/ashakids.md) · [Mi cambio de landing](https://github.com/sromansilva/ashakids-platform/commit/5dacd55)
-
-</details>
-
-<details>
-<summary><strong>03 · LifeXperience y MANKA+: prototipos y estado</strong></summary>
-
-#### LifeXperience
-
-**Practica la vida antes de vivirla:** simulaciones educativas, historias interactivas y gamificación. **Mi participación:** trabajo en la propuesta y el prototipo en Figma. **Estado:** prototipo en Figma Make; informe pendiente de incorporar. La pantalla menciona Supabase, cuya integración no se ha verificado.
-
-[Figma Make](https://www.figma.com/make/PEM0hl8lFPZMcPFT7gFbYG/Next-steps-discussion) · [Caso y captura completa](docs/lifexperience.md)
-
-#### MANKA+
-
-Abastecimiento de productos, registro de familias y seguimiento de beneficiarios de **ollas comunes en Perú**. **Mi participación:** propuesta y prototipo en Figma. **Estado:** prototipo; la captura muestra la portada administrativa, con flujos operativos pendientes de revisión.
-
-[Prototipo en Figma](https://www.figma.com/proto/E2MQIJzdnrB3AHdduSVq4r/Manka-3.0?node-id=22-2&starting-point-node-id=22%3A2) · [Caso y captura completa](docs/manka.md)
-
-</details>
-
-<details>
-<summary><strong>04 · LOOKMI y MirrorMind: prototipos y límites</strong></summary>
-
-#### LOOKMI
-
-Una foto de tu mascota como punto de partida para un avatar editable y la exploración de estilos, accesorios y cortes. **Mi participación:** trabajo en Figma durante el Makethon de Trujillo. **Estado:** prototipo en Figma Make; la captura muestra el editor, sin acreditar transformación de fotos o reservas funcionales.
-
-[Figma Make](https://www.figma.com/make/QWhvi0W8B2Do0OfQGDDvJZ/Idea-Development-Support) · [Caso y captura completa](docs/lookmi.md)
-
-#### MirrorMind
-
-Prototipo de interfaces y exploración del análisis emocional con **React y TypeScript**. **Estado:** varias vistas son simulaciones; revisión técnica y de seguridad pendiente antes de promoverlo como aplicación operativa. No se atribuye validez clínica ni funcionalidades de producción.
-
-[Repositorio de MirrorMind](https://github.com/amaximilianorodri/MirrorMind)
-
-</details>
-
-<details>
-<summary><strong>05 · NeuroEcho, GAMELAB y otras experiencias: créditos del equipo</strong></summary>
-
-**NeuroEcho es el juego creado con mi equipo de GAMELAB 4.0. Mi participación:** distintas tareas y diseño de la propuesta del juego. **Contexto:** proyecto Godot sobre Threadbare; el repositorio es un fork de Endless y conserva sus créditos. La participación de diseño está confirmada por mí; queda pendiente enlazar una entrega específica del equipo.
-
-[Organización](https://github.com/Game-Lab-4-0-UTP-Group-7-Team-2) · [Repositorio del equipo](https://github.com/Game-Lab-4-0-UTP-Group-7-Team-2/threadbare) · [Contexto y contribución](docs/gamelab.md)
-
-<details>
-<summary><strong>Otras experiencias de desarrollo colaborativo</strong></summary>
-
-- **UTPLiteApp:** prototipo académico Android con Kotlin, Java y XML; mis cambios identificados incluyen calendario, anuncios y login. Utiliza datos estáticos y acceso de demostración. [Repositorio](https://github.com/sromansilva/UTPLiteApp) · [Mis contribuciones](docs/utpliteapp.md).
-- **ProyectoHeDe:** sitio institucional estático con HTML, CSS y JavaScript; aporte personal detallado pendiente de precisar. [Repositorio colaborativo](https://github.com/j3zkills/ProyectoHeDe).
-
-También colaboro en ASHAKids y JMP PINGUS; sus casos distinguen mis cambios de las funcionalidades construidas por el equipo.
-
-</details>
-
-</details>
-
-<details>
-<summary><strong>Capturas reales de mis prototipos</strong></summary>
-
-<a href="docs/lifexperience.md"><img src="assets/proyectos/lifexperience.png" width="420" alt="Captura real del prototipo LifeXperience. Ver el caso para consultar su estado y la pantalla completa."></a>
-
-<a href="docs/manka.md"><img src="assets/proyectos/manka.png" width="110" alt="Captura real del prototipo MANKA+. Ver el caso para consultar su estado y la pantalla completa."></a>
-
-<a href="docs/lookmi.md"><img src="assets/proyectos/lookmi.png" width="420" alt="Captura real del prototipo LOOKMI. Ver el caso para consultar su estado y la pantalla completa."></a>
+También participé en [ProyectoHeDe](https://github.com/j3zkills/ProyectoHeDe), un sitio institucional estático; el aporte detallado sigue pendiente de precisar.
 
 </details>
 
@@ -218,27 +127,7 @@ También colaboro en ASHAKids y JMP PINGUS; sus casos distinguen mis cambios de 
 
 <img src="assets/anime/herramientas.svg" width="100%" alt="Cuadrícula de herramientas: JavaScript, TypeScript, React, HTML, CSS, Supabase, Git, GitHub, Figma y Godot.">
 
-**Herramientas utilizadas en proyectos; las insignias no son certificaciones.**
-
-
-
-
-
-**Web y datos:** EduKids, ASHAKids y JMP. **Diseño:** LifeXperience, MANKA+, LOOKMI y GAMELAB. **Móvil:** UTPLiteApp. En Godot, mi aporte confirmado es diseño de la propuesta del juego.
-
-<details>
-<summary>Relacionar tecnologías con la evidencia de cada proyecto</summary>
-
-- **HTML, CSS y JavaScript:** EduKids.
-- **React y TypeScript:** trabajo en ASHAKids y JMP.
-- **Supabase y SQL de PostgreSQL:** cambios de JMP.
-- **Figma:** LifeXperience, MANKA+ y LOOKMI.
-- **Kotlin, Java y XML:** cambios de UTPLiteApp.
-- **Git y GitHub:** colaboración, iteraciones y documentación.
-- **Godot:** entorno de GAMELAB; no se declara dominio de programación en el motor.
-- **Python y FastAPI:** backend del equipo de ASHAKids; no se atribuye su implementación exclusivamente a mí.
-
-</details>
+Herramientas que acompañan mis proyectos y mi aprendizaje. Las etiquetas de cada tarjeta indican dónde las utilizo.
 
 <table><tr>
 <td width="50%" valign="top"><img src="assets/anime/enfoque.png" width="100%" alt="Mi enfoque: soluciones, gestión, diseño, trabajo en equipo e impacto social."></td>
@@ -280,4 +169,4 @@ Los lenguajes de proyectos colaborativos se describen en los casos; no se añade
 
 <p align="center"><strong>Pequeños pasos también te llevan a grandes lugares. 💙</strong></p>
 
-[GitHub · @amaximilianorodri](https://github.com/amaximilianorodri) · [Versión estática del separador](assets/anime/separador.png) · [Mantenimiento](docs/MANTENIMIENTO.md) · [Créditos visuales](docs/CREDITOS_VISUALES.md) · [Informe del rediseño](docs/REDISENO_ANIME.md)
+[GitHub · @amaximilianorodri](https://github.com/amaximilianorodri) · [Versión estática del separador](assets/anime/separador.png) · [Mantenimiento](docs/MANTENIMIENTO.md) · [Créditos visuales](docs/CREDITOS_VISUALES.md) · [Informe del refinamiento](docs/REFINAMIENTO_DARK.md)

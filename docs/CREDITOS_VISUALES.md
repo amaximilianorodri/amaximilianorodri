@@ -2,6 +2,8 @@
 
 ## Universo anime de AMPI.EXE · 14 de octubre de 2026
 
+La segunda iteración reutiliza el mismo arte. Los paneles oscuros, etiquetas y la tarjeta de frase son gráficos de interfaz propios generados con `tools/anime.py`; no se generaron nuevas ilustraciones con IA. La frase «No se trata de ser el mejor…» se toma de la referencia visual compartida y no se atribuye a un autor específico.
+
 Ilustración generada con la herramienta integrada **imagegen** a partir de la imagen de referencia aportada por la autora. Se conserva el [arte original](../assets/anime/arte-original.png); sus tres escenas se usan como banners decorativos, sin atribuirlas a proyectos reales. La referencia no se publica en este repositorio.
 
 Doraemon y sus gadgets son referencias a personajes y creaciones de Fujiko F. Fujio; este portafolio personal no indica afiliación oficial. El arte generado no es una captura ni una ilustración oficial. Los paneles, textos y animaciones de interfaz se construyeron para este perfil con `tools/anime.py`. Los logotipos de herramientas reutilizan los recursos existentes y sus créditos detallados más abajo.

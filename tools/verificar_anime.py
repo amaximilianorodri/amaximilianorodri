@@ -16,10 +16,10 @@ missing=[x for x in local if not (ROOT/x.split('#')[0]).is_file()]
 assert not missing,missing
 assert 'calendario-202' not in text
 assert 'assets/cyberpunk/' not in text
-baseline=subprocess.check_output(['git','show','HEAD:README.md'],cwd=ROOT).decode('utf-8')
-urls=lambda s:set(re.findall(r'https://[^\s)<>\"]+',s))
-# Figma en HTML debe escapar &; ambos destinos deben seguir siendo iguales.
-assert not urls(baseline)-urls(unescape(text)),urls(baseline)-urls(unescape(text))
+# Los enlaces de casos retirados de la portada se conservan en la documentación.
+assert all(s not in text for s in ['LOOKMI','MANKA+','Historias, créditos y evidencia','Relacionar tecnologías con la evidencia'])
+project_order=re.findall(r'alt="(0[1-5] · [^"]+)"',text)
+assert project_order==['01 · JMP PINGUS','02 · EduKids → ASHAKids','03 · LifeXperience','04 · MirrorMind','05 · GAMELAB 4.0'],project_order
 assert not subprocess.check_output(['git','diff','--','assets/actividad'],cwd=ROOT).strip()
 gif=Image.open(ROOT/'assets/anime/separador.gif')
 frames=[]; duration=0
@@ -37,5 +37,5 @@ with urllib.request.urlopen(req,timeout=40) as r: rendered=r.read().decode()
 rendered=re.sub(r'name="user-content-([^"]+)"',lambda m:m.group(0)+' id="'+m.group(1)+'"',rendered)
 preview=ROOT/'preview';preview.mkdir(exist_ok=True)
 css='''body{margin:0;background:#fff;color:#1f2328;font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}article{max-width:980px;margin:0 auto;padding:28px}a{color:#0969da;text-decoration:none}a:hover{text-decoration:underline}img{max-width:100%;height:auto;vertical-align:middle}table{width:100%;border-spacing:0;border-collapse:collapse;margin:16px 0;table-layout:fixed}td{padding:12px;border:1px solid #d1d9e0;overflow-wrap:anywhere}h2{font-size:24px;border-bottom:1px solid #d1d9e0;padding-bottom:8px;margin-top:28px}h3{font-size:20px}details{padding:8px 0}summary{cursor:pointer}p{margin:16px 0}picture{display:block}code{background:#eff1f3;padding:2px 4px;border-radius:4px}.dark{background:#0d1117;color:#f0f6fc}.dark a{color:#4493f8}.dark td,.dark h2{border-color:#3d444d}.dark code{background:#252a30}@media(max-width:500px){article{padding:12px}td{padding:7px;font-size:13px}h2{font-size:22px}}'''
-(preview/'README.html').write_text('<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><base href="../"><title>AMPI.EXE · Vista previa README</title><style>'+css+'</style><article class="markdown-body">'+rendered+'</article></html>',encoding='utf-8')
+(preview/'README.html').write_text('<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><base href="../"><title>AMPI.EXE · Vista previa README</title><style>'+css+'</style><body class="dark"><article class="markdown-body">'+rendered+'</article></body></html>',encoding='utf-8')
 print('Vista previa: preview/README.html (HTML renderizado por GitHub, estilos locales aproximados).')

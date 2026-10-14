@@ -2,6 +2,8 @@
 
 ## Diseño actual: anime retrofuturista
 
+La iteración actual adapta los paneles al modo oscuro y limita los destacados a cinco proyectos. Consulta el [refinamiento oscuro](REFINAMIENTO_DARK.md). Las tecnologías se mantienen dentro de las tarjetas del README; al editarlas, actualiza también sus etiquetas locales si corresponde. `python tools/verificar_anime.py` prepara ahora la vista previa oscura por defecto.
+
 El rediseño local del 14 de octubre de 2026 usa `assets/anime/`. Ejecuta `python tools/anime.py` para regenerar sus paneles y `python tools/verificar_anime.py` para validar rutas y crear `preview/README.html`. Consulta el [informe del rediseño](REDISENO_ANIME.md). Las instrucciones cyberpunk que siguen se conservan como historial y no regeneran el diseño actual.
 
 ## Actualizar la actividad
