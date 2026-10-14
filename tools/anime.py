@@ -4,7 +4,7 @@ python tools/anime.py --art RUTA  (solo la primera vez)
 python tools/anime.py            (regenerar textos y paneles)
 """
 from pathlib import Path
-import argparse, math, shutil, re
+import argparse, math, shutil, re, base64
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 from arcade import GLYPHS
 
@@ -44,9 +44,36 @@ def wrap(d,text,xy,width,size=23,color=INK,bold=False):
 
 def save(im,name): im.save(OUT/(name+'.png'),optimize=True)
 
+def sticker(im,name,box):
+    asset=Image.open(OUT/f'stickers/{name}.png').convert('RGBA')
+    asset.thumbnail((box[2],box[3]),Image.Resampling.LANCZOS)
+    im.paste(asset,(box[0],box[1]),asset)
+
+def tech_icon(key):
+    source=ROOT/f'assets/logos/{key}.svg'
+    if source.exists():
+        match=re.search(r'href="(data:image/svg\+xml;base64,[^"]+)"',source.read_text(encoding='utf-8'))
+        if match:return match.group(1)
+    source=ROOT/f'assets/logos/tecnologias/{key}.svg'
+    if source.exists(): svg=source.read_text(encoding='utf-8')
+    else:
+        # Símbolos propios para el formato XML y la biblioteca pdf-lib: no
+        # representan un logotipo oficial ni se añaden tecnologías nuevas.
+        shape='<path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-14-2 16"/>' if key=='xml' else '<path d="M5 2h9l5 5v15H5zM14 2v6h5M8 13h8M8 17h6"/>'
+        svg=f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#a7caff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{shape}</svg>'
+    return 'data:image/svg+xml;base64,'+base64.b64encode(svg.encode()).decode()
+
 def main():
     p=argparse.ArgumentParser(); p.add_argument('--art',type=Path); a=p.parse_args(); OUT.mkdir(parents=True,exist_ok=True)
     if a.art: shutil.copy2(a.art,OUT/'arte-original.png')
+    # Empaquetado del atlas: recortes de sus seis celdas, sin retocar el arte.
+    atlas=Image.open(OUT/'stickers/atlas-original.png').convert('RGBA')
+    sw,sh=atlas.size
+    names=['saludo','volando','puerta','dorayaki','laptop','astronauta']
+    for i,name in enumerate(names):
+        cell=atlas.crop((round(i%3*sw/3),round(i//3*sh/2),round((i%3+1)*sw/3),round((i//3+1)*sh/2)))
+        cell.thumbnail((256,256),Image.Resampling.LANCZOS)
+        cell.save(OUT/f'stickers/{name}.png',optimize=True)
     sheet=Image.open(OUT/'arte-original.png').convert('RGB'); w,h=sheet.size
     # Extraer las tres franjas solicitadas sin alterar el contenido artístico.
     for name,top,bottom in [('escritorio',0,.3223),('aventura',.3262,.666),('noche',.671,1)]:
@@ -62,36 +89,57 @@ def main():
     y=wrap(d,'Desarrollo · Gestión · Diseño · Innovación · Impacto social',(28,y+18),355,23)
     d.line((28,y+13,390,y+13),fill=LINE,width=2)
     wrap(d,'¡Hola! Gracias por estar aquí',(28,y+30),350,24,BLUE)
-    star(d,375,50,15,'#ffc94e'); save(im,'identidad')
+    sticker(im,'saludo',(348,17,60,60)); save(im,'identidad')
     im,d=panel(900,250); pixel(d,'HOLA! SOY AMPI',30,30,4)
-    wrap(d,'Me gusta entender una necesidad, darle forma a una idea y colaborar para construir una solución.',(30,91),800,27)
-    wrap(d,'Tecnología + personas + creatividad + propósito',(30,185),820,25,BLUE,True); save(im,'hola')
+    wrap(d,'Me gusta entender una necesidad, darle forma a una idea y colaborar para construir una solución.',(30,91),660,27)
+    wrap(d,'Tecnología + personas + creatividad + propósito',(30,185),820,25,BLUE,True)
+    sticker(im,'volando',(710,15,155,155));save(im,'hola')
     for name,title,body in [('sobre-mi','Sobre mí','Me encanta aprender, crear y organizar proyectos que conecten personas, ideas y oportunidades.'),('enfoque','Mi enfoque','Desarrollo de soluciones · Gestión de proyectos · Diseño de interfaces · Trabajo en equipo · Impacto social'),('actualmente','Actualmente…','Estudiando Ingeniería de Sistemas e Informática. Participando en JMP PINGUS y construyendo nuevas ideas.')]:
-        im,d=panel(440,285); d.text((26,20),title,font=font(29,True),fill=INK);d.line((26,66,414,66),fill=LINE,width=2)
-        wrap(d,body,(26,87),380,25); star(d,398,250,12,BLUE);save(im,name)
-    cards=[('jmp','01  JMP PINGUS','Prácticas · Inventario y procesos','escritorio'),('ashakids','02  EduKids → ASHAKids','Una idea familiar que creció en equipo','aventura'),('lifexperience','03  LifeXperience','Practica la vida antes de vivirla','aventura'),('mirrormind','04  MirrorMind','Interfaces, diseño y experimentación','escritorio'),('gamelab','05  GAMELAB 4.0','NeuroEcho · Una aventura en equipo','noche'),('utpliteapp','UTPLiteApp','Desarrollo colaborativo · Android','escritorio')]
-    for name,title,body,art in cards:
+        im,d=panel(440,340)
+        pose={'sobre-mi':'dorayaki','enfoque':'puerta','actualmente':'laptop'}[name]
+        sticker(im,pose,(23,10,52,52));d.text((89,20),title,font=font(29,True),fill=INK);d.line((26,70,414,70),fill=LINE,width=2)
+        wrap(d,body,(26,91),380,25)
+        sticker(im,pose,(315,235,105,100))
+        if name=='actualmente':
+            d.rounded_rectangle((26,289,288,300),5,fill='#1c334f',outline=LINE)
+            d.rounded_rectangle((28,291,198,298),3,fill='#86b8f6')
+        else:
+            star(d,45,290,9,'#ffd37a');star(d,275,285,6,BLUE)
+        save(im,name)
+    cards=['jmp','ashakids','lifexperience','mirrormind','gamelab','utpliteapp']
+    for name in cards:
         # El nombre y la descripción permanecen como HTML legible en móvil.
-        im,d=panel(700,185); scene=Image.open(OUT/(art+'.webp')); im.paste(ImageOps.fit(scene,(668,150)),(16,16))
+        im,d=panel(700,340)
+        scene=Image.open(OUT/f'proyectos/{name}.webp')
+        # Cada tarjeta usa una escena propia; se conserva más altura para
+        # reconocer el concepto y evitar recortar al personaje principal.
+        im.paste(ImageOps.fit(scene,(668,304)),(16,16))
         save(im,'proyecto-'+name)
     # Tarjeta de frase, sin añadir un sexto proyecto destacado.
-    im,d=panel(700,285)
-    pixel(d,'NEXT ADVENTURE',35,30,3)
-    wrap(d,'No se trata de ser el mejor, sino de ser una mejor versión de ti cada día.',(35,89),560,32,INK,True)
-    d.rounded_rectangle((619,171,665,260),5,fill='#c77eae',outline='#f0bad9',width=2)
-    d.rectangle((627,181,657,250),outline='#f0bad9',width=2)
-    for x,y,r in [(600,48,12),(565,244,9),(42,247,8)]: star(d,x,y,r,'#ffd37a')
+    # Proporción vertical ajustada al alto completo de la fila de GAMELAB;
+    # la frase inferior forma parte del marco, sin un párrafo suelto debajo.
+    im,d=panel(700,780)
+    pixel(d,'NEXT ADVENTURE',194,42,4)
+    wrap(d,'No se trata de ser el mejor, sino de ser una mejor versión de ti cada día.',(76,119),550,36,INK,True)
+    scene=Image.open(OUT/'noche.webp')
+    im.paste(ImageOps.fit(scene,(652,190)),(24,496))
+    sticker(im,'astronauta',(180,310,320,320))
+    for x,y,r in [(46,56,12),(650,73,9),(70,382,12),(622,359,10)]: star(d,x,y,r,'#ffd37a')
+    d.text((350,700),'Pequeños pasos,',anchor='mt',font=font(28,True),fill=BLUE)
+    d.text((350,736),'nuevas aventuras.',anchor='mt',font=font(28,True),fill=INK)
     save(im,'frase')
+    im,d=panel(700,270)
+    wrap(d,'Pequeños pasos también te llevan a grandes lugares.',(260,55),380,33,INK,True)
+    sticker(im,'astronauta',(28,15,215,215))
+    star(d,660,210,11,'#ffd37a');star(d,255,230,6,BLUE)
+    save(im,'frase-pasos')
     # Etiquetas locales: colores suaves, tipografía legible y texto accesible.
     badges=OUT/'badges';badges.mkdir(exist_ok=True)
     labels={'html':'HTML','css':'CSS','javascript':'JavaScript','react':'React','typescript':'TypeScript','tailwind':'Tailwind CSS','supabase':'Supabase','postgresql':'PostgreSQL / SQL','pdf-lib':'pdf-lib','figma':'Figma','godot':'Godot','python':'Python','fastapi':'FastAPI','kotlin':'Kotlin','java':'Java','xml':'XML','git':'Git','github':'GitHub'}
     for key,label in labels.items():
         f=font(24); width=round(f.getlength(label))+56
-        badge=Image.new('RGB',(width,44),BG); bd=ImageDraw.Draw(badge)
-        bd.rounded_rectangle((1,1,width-2,42),16,fill='#1c334f',outline='#385b80')
-        bd.ellipse((13,18,21,26),fill='#f5abc9' if key in ['figma','css','fastapi'] else BLUE)
-        bd.text((31,5),label,font=f,fill=INK)
-        badge.save(badges/(key+'.png'),optimize=True)
+        svg=f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="44" viewBox="0 0 {width} 44" role="img" aria-label="{label}"><title>{label}</title><rect x="1" y="1" width="{width-2}" height="42" rx="16" fill="#1c334f" stroke="#385b80"/><image x="10" y="10" width="24" height="24" href="{tech_icon(key)}"/><text x="42" y="29" font-family="Segoe UI,Arial,sans-serif" font-size="22" fill="#e3efff">{label}</text></svg>'
+        (badges/(key+'.svg')).write_text(svg,encoding='utf-8')
     # Cuadrícula de iconos: reutiliza los logotipos locales y sus créditos.
     items=['javascript','typescript','react','html','css','supabase','git','github','figma','godot']
     svg=['<svg xmlns="http://www.w3.org/2000/svg" width="700" height="285" viewBox="0 0 700 285"><rect x="1" y="1" width="698" height="283" rx="22" fill="#132238" stroke="#304d72"/><text x="25" y="42" fill="#e3efff" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="bold">Mi caja de herramientas</text>']

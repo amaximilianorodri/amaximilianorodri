@@ -1,7 +1,7 @@
 """Valida rutas/animación y prepara una vista previa con el renderizador de GitHub."""
 from pathlib import Path
 from html import unescape
-import json,re,urllib.request,subprocess
+import json,re,urllib.request,subprocess,hashlib
 from PIL import Image
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -21,6 +21,18 @@ assert all(s not in text for s in ['LOOKMI','MANKA+','Historias, créditos y evi
 project_order=re.findall(r'alt="(0[1-5] · [^"]+)"',text)
 assert project_order==['01 · JMP PINGUS','02 · EduKids → ASHAKids','03 · LifeXperience','04 · MirrorMind','05 · GAMELAB 4.0'],project_order
 assert not subprocess.check_output(['git','diff','--','assets/actividad'],cwd=ROOT).strip()
+card_names=['jmp','ashakids','lifexperience','mirrormind','gamelab','utpliteapp']
+card_hashes=[hashlib.sha256(Image.open(ROOT/f'assets/anime/proyecto-{name}.png').convert('RGB').tobytes()).hexdigest() for name in card_names]
+assert len(set(card_hashes))==6,'Las seis tarjetas deben tener ilustraciones distintas.'
+lab_path=ROOT/'assets/anime/animaciones/laboratorio.gif'
+lab=Image.open(lab_path); lab_loop=lab.info.get('loop')
+lab_frames=[];lab_duration=0
+for i in range(lab.n_frames):
+    lab.seek(i);lab_duration+=lab.info.get('duration',0);lab_frames.append(hashlib.sha256(lab.convert('RGB').tobytes()).hexdigest())
+assert len(set(lab_frames))>1 and lab_loop==0
+assert lab_path.stat().st_size<1_000_000
+assert (ROOT/'assets/anime/animaciones/laboratorio.png').is_file()
+print(json.dumps({'ilustraciones_distintas':len(set(card_hashes)),'laboratorio_bytes':lab_path.stat().st_size,'laboratorio_fotogramas':lab.n_frames,'laboratorio_duracion_ms':lab_duration,'laboratorio_repeticion':'continua'},ensure_ascii=False))
 gif=Image.open(ROOT/'assets/anime/separador.gif')
 frames=[]; duration=0
 for i in range(gif.n_frames):

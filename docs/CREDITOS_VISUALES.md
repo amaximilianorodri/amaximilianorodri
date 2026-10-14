@@ -1,5 +1,17 @@
 # Créditos visuales
 
+## Escenas individuales y laboratorio de aventuras
+
+Seis nuevas ilustraciones generadas individualmente con **imagegen integrado** reemplazan los fondos repetidos de las tarjetas. Se conservan las versiones WebP en `assets/anime/proyectos/` y el [conjunto completo de prompts](../assets/anime/proyectos/PROMPTS.json). Son arte decorativo conceptual y no capturas de los proyectos. No contienen recursos copiados de Threadbare.
+
+El laboratorio animado es una composición propia de los stickers existentes, estrellas y paneles; su fuente es `tools/animaciones.py`. Conserva los créditos de los stickers y personajes indicados a continuación.
+
+## Stickers e iconos de tecnologías
+
+La tercera iteración incorpora seis stickers de Doraemon generados con **imagegen integrado**, guiados por las dos referencias visuales aportadas. [Atlas original](../assets/anime/stickers/atlas-original.png) · [Prompt](../assets/anime/PROMPT_STICKERS.txt). Doraemon pertenece a sus titulares; el arte no es material oficial. Los paneles se componen con el generador propio, conservando el canal alfa de las ilustraciones.
+
+Los logotipos complementarios proceden de [Simple Icons](https://github.com/simple-icons/simple-icons) (CC0-1.0) y [Devicon](https://github.com/devicons/devicon) (MIT). La [procedencia por archivo](../assets/logos/tecnologias/fuentes.json) identifica sus fuentes. Se han recoloreado cinco glifos para mejorar contraste. XML y pdf-lib usan símbolos propios de código y documento; no se presentan como logotipos oficiales.
+
 ## Universo anime de AMPI.EXE · 14 de octubre de 2026
 
 La segunda iteración reutiliza el mismo arte. Los paneles oscuros, etiquetas y la tarjeta de frase son gráficos de interfaz propios generados con `tools/anime.py`; no se generaron nuevas ilustraciones con IA. La frase «No se trata de ser el mejor…» se toma de la referencia visual compartida y no se atribuye a un autor específico.

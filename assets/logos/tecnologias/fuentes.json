@@ -1,0 +1,26 @@
+{
+  "tailwind": {
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/tailwindcss.svg",
+    "collection": "Simple Icons, CC0-1.0; marcas de sus titulares"
+  },
+  "postgresql": {
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/postgresql.svg",
+    "collection": "Simple Icons, CC0-1.0; marcas de sus titulares"
+  },
+  "python": {
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/python.svg",
+    "collection": "Simple Icons, CC0-1.0; marcas de sus titulares"
+  },
+  "fastapi": {
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/fastapi.svg",
+    "collection": "Simple Icons, CC0-1.0; marcas de sus titulares"
+  },
+  "kotlin": {
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/kotlin.svg",
+    "collection": "Simple Icons, CC0-1.0; marcas de sus titulares"
+  },
+  "java": {
+    "source": "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+    "collection": "Devicon, MIT; marca de su titular"
+  }
+}

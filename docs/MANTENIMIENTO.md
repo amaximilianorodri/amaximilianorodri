@@ -2,6 +2,10 @@
 
 ## Diseño actual: anime retrofuturista
 
+Las tarjetas actuales usan seis [escenas distintas y un laboratorio animado](ESCENAS_Y_ANIMACIONES.md). Sus fuentes optimizadas están en `assets/anime/proyectos/`; `python tools/anime.py` regenera las miniaturas y `python tools/animaciones.py` regenera el GIF y la alternativa estática del laboratorio. Ambos comandos funcionan sin red.
+
+Los [iconos y detalles de Doraemon](ICONOS_DORAEMON.md) añaden etiquetas SVG con logotipos y stickers transparentes. `tools/anime.py` necesita el atlas conservado en `assets/anime/stickers/atlas-original.png` y los logotipos de `assets/logos/tecnologias/`; no requiere volver a generar imágenes ni descargarlas al ejecutarlo.
+
 La iteración actual adapta los paneles al modo oscuro y limita los destacados a cinco proyectos. Consulta el [refinamiento oscuro](REFINAMIENTO_DARK.md). Las tecnologías se mantienen dentro de las tarjetas del README; al editarlas, actualiza también sus etiquetas locales si corresponde. `python tools/verificar_anime.py` prepara ahora la vista previa oscura por defecto.
 
 El rediseño local del 14 de octubre de 2026 usa `assets/anime/`. Ejecuta `python tools/anime.py` para regenerar sus paneles y `python tools/verificar_anime.py` para validar rutas y crear `preview/README.html`. Consulta el [informe del rediseño](REDISENO_ANIME.md). Las instrucciones cyberpunk que siguen se conservan como historial y no regeneran el diseño actual.
