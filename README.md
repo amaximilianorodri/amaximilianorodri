@@ -149,7 +149,7 @@ Herramientas que acompañan mis proyectos y mi aprendizaje. Las etiquetas de cad
 
 ### Mi próxima aventura
 
-Quiero profundizar en arquitectura, análisis de procesos, metodologías, gestión de proyectos y automatización, y seguir explorando soluciones con impacto social.
+Me interesa participar en proyectos donde pueda combinar tecnología, creatividad y organización para transformar ideas en soluciones útiles, colaborar con equipos multidisciplinarios y contribuir a la mejora de procesos.
 
 <picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/anime/separador.png"><img src="assets/anime/separador.gif" width="100%" alt="Estrellas flotantes y una puerta dimensional rosa; animación breve de tres segundos."></picture>
 
