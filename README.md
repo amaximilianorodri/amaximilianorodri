@@ -1,4 +1,6 @@
 <!-- AMPI.EXE · Diseño anime retrofuturista. El texto de las tarjetas también existe debajo de cada imagen. -->
+<p align="center"><a href="https://www.linkedin.com/in/amparito-maximiliano-rodriguez"><img src="assets/anime/barra-linkedin.svg" width="49%" alt="LinkedIn · Conectemos"></a> <a href="https://github.com/amaximilianorodri?tab=repositories"><img src="assets/anime/barra-github.svg" width="49%" alt="GitHub · Mis proyectos"></a></p>
+
 <img src="assets/anime/banner.png" width="100%" alt="AMPI.EXE. Un futuro mejor también se construye con pequeñas ideas. Doraemon, un escritorio tecnológico, ciudad futurista y puerta dimensional.">
 
 <p align="center"><a href="#sobre-mi">💙 Sobre mí</a> · <a href="#proyectos-destacados">📂 Proyectos</a> · <a href="#laboratorio-de-aventuras">🌟 Aventuras</a> · <a href="#herramientas-y-tecnologias">🧰 Herramientas</a> · <a href="#actividad-de-github">✨ Actividad</a></p>

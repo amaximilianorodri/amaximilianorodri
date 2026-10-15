@@ -2,6 +2,8 @@
 
 ## Diseño actual: anime retrofuturista
 
+La barra sobre el banner enlaza al [LinkedIn confirmado por la autora](https://www.linkedin.com/in/amparito-maximiliano-rodriguez) y a sus repositorios de GitHub. `python tools/barra_contacto.py` regenera sus dos botones SVG locales. Para cambiar los destinos, edita los enlaces del primer párrafo del README.
+
 Las tarjetas actuales usan seis [escenas distintas y un laboratorio animado](ESCENAS_Y_ANIMACIONES.md). Sus fuentes optimizadas están en `assets/anime/proyectos/`; `python tools/anime.py` regenera las miniaturas y `python tools/animaciones.py` regenera el GIF y la alternativa estática del laboratorio. Ambos comandos funcionan sin red.
 
 Los [iconos y detalles de Doraemon](ICONOS_DORAEMON.md) añaden etiquetas SVG con logotipos y stickers transparentes. `tools/anime.py` necesita el atlas conservado en `assets/anime/stickers/atlas-original.png` y los logotipos de `assets/logos/tecnologias/`; no requiere volver a generar imágenes ni descargarlas al ejecutarlo.
